@@ -20,7 +20,7 @@
 
 ### 带参数使用
 
-示例：api.php?id=6
+返回指定图片示例：api.php?id=6
 
 ```
 GET ./api.php?id=6
@@ -29,7 +29,7 @@ HTTP/1.1 302 Found
 Location:https://p4.amarea.cn/i/8oz6emqw.jpg
 ```
 
-示例：api.php?id=6&type=json
+以json返回指定图片示例：api.php?id=6&type=json
 
 ```
 GET ./api.php?id=6&type=json
@@ -39,7 +39,7 @@ Content-Type: text/json
 {"code":200,"id":6,"url":"https:\/\/p4.amarea.cn\/i\/8oz6emqw.jpg"}
 ```
 
-示例：api.php?type=quantity
+返回图片总数示例：api.php?type=quantity
 
 ```
 GET ./api.php?type=quantity
