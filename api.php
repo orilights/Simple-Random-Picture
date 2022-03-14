@@ -1,9 +1,9 @@
 <?php
 
-const NAME = 'emilia';
+const DBFILE = 'data/emilia.txt';
 
 //读取数据
-$data = file('data/' . NAME . '.csv', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+$data = file(DBFILE, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 if (empty($data[0])){
     header('HTTP/1.1 503 Service Unavailable');
     die ('503 Service Unavailable');

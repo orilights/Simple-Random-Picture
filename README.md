@@ -1,4 +1,5 @@
 # Simple-Random-Picture
+
 一个简易的随机图片API
 
 ## 参数
@@ -7,8 +8,6 @@
 | ---- | --------- | ------ | ----------------------------------------- |
 | id   | 可选      | number | 如ID对应图片不存在则随机返回一张图片      |
 | type | 可选      | string | [json]以json返回   [quantity]返回图片总数 |
-
-
 
 ## 使用
 
@@ -20,37 +19,14 @@
 
 ### 带参数使用
 
-返回指定图片示例：api.php?id=6
+返回指定图片：api.php?id=6
 
-```
-GET ./api.php?id=6
-
-HTTP/1.1 302 Found
-Location:https://p4.amarea.cn/i/8oz6emqw.jpg
-```
-
-以json返回指定图片示例：api.php?id=6&type=json
-
-```
-GET ./api.php?id=6&type=json
-
-HTTP/1.1 200 OK
-Content-Type: text/json
-{"code":200,"id":6,"url":"https:\/\/p4.amarea.cn\/i\/8oz6emqw.jpg"}
-```
+以json返回指定图片：api.php?id=6&type=json
 
 返回图片总数示例：api.php?type=quantity
-
-```
-GET ./api.php?type=quantity
-
-HTTP/1.1 200 OK
-7
-```
 
 ## 测试地址
 
 [api.amarea.cn/getemilia](https://api.amarea.cn/getemilia)
 
 [api.amarea.cn/getemilia?id=6&type=json](https://api.amarea.cn/getemilia?id=6&type=json)
-
